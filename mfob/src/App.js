@@ -4,6 +4,10 @@ import Intro from './components/Intro';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import DataScience from "./components/DataScience";
+import WebDesign from "./components/WebDesign";
+import AppDevelopment from "./components/AppDevelopment"; 
+import MachineLearning from "./components/MachineLearning";
 
 const Article = styled.article`
 height: 100vh;
@@ -14,8 +18,14 @@ function App() {
     <Article> 
      <Intro/>
      <About/>
-     <Contact/>
      <Portfolio/>
+     <Contact/>
+     <WebDesign />
+     <DataScience />
+     <AppDevelopment />
+     <MachineLearning />
+
+
   </Article>
   );
 }

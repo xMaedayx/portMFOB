@@ -1,15 +1,9 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import { Canvas } from "@react-three/fiber";
-import React, { Suspense, useMemo } from "react";
 import anImage from "../images/hero.png";
-import { OrbitControls, useLoader } from "@react-three/fiber";
-import {
-  AmbientLight,
-  DirectionalLight,
-  MeshDistortMaterial,
-  Sphere,
-} from "@react-three/drei";
+import { AmbientLight, PointLight } from 'three';
+
+
 
 const Article = styled.article`
   height: 100vh;
@@ -98,22 +92,6 @@ const Intro = () => {
           <Button> Learn more about me</Button>
         </Top>
         <Bottom>
-          <Canvas>
-            <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <AmbientLight intensity={1} />
-              <DirectionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-
           <Img src={anImage} />
         </Bottom>
       </Section>
@@ -121,3 +99,6 @@ const Intro = () => {
   );
 };
 export default Intro;
+
+
+
