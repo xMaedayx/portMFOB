@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import anImage from "../images/hero.png";
-import { AmbientLight, PointLight } from 'three';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,7 +40,7 @@ const Description = styled.div`
   font-size: 20px;
   color: #b0808c;
 `;
-const Button = styled.div`
+const Button = styled(Link)`
   background-color: #9caf88;
   color: #ffffff;
   font-weight: 500;
@@ -87,9 +87,9 @@ const Intro = () => {
             </Text>
           </Content>
           <Description>
-            Back-end
+         back end
           </Description>
-          <Button> Learn more about me</Button>
+          <Button > Learn more about me</Button>
         </Top>
         <Bottom>
           <Img src={anImage} />
