@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import anImage from "../images/hero.png";
-import { Link } from 'react-router-dom';
+
+
 
 
 
@@ -40,7 +41,7 @@ const Description = styled.div`
   font-size: 20px;
   color: #b0808c;
 `;
-const Button = styled(Link)`
+const Button = styled.button`
   background-color: #9caf88;
   color: #ffffff;
   font-weight: 500;
@@ -55,8 +56,7 @@ const Bottom = styled.div`
   position: relative;
 `;
 const Img = styled.img`
-  ${(props) => (props.$primary ? "#BF4F74" : "white")};
-  color: ${(props) => (props.$primary ? "white" : "#BF4F74")};
+  
   width: 500px;
   height: 500px;
   font-size: 1em;
@@ -92,9 +92,10 @@ const Intro = () => {
           <Button > Learn more about me</Button>
         </Top>
         <Bottom>
-          <Img src={anImage} />
+          <Img src={anImage} alt="character"/>
         </Bottom>
       </Section>
+
     </Article>
   );
 };

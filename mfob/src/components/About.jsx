@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const Article = styled.article`
 height: 100vh;
 background-color: #DAF7A6; `;
@@ -66,6 +67,7 @@ const About = () => {
                     <Button>See my work!</Button>   
             </Bottom>   
            </Section>
+    
         </Article>
     ) };
     export default About;

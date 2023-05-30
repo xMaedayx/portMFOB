@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import myImage from '../images/MFOB.png';
 import myIcon from '../images/icon.png';
+import { Link } from "react-router-dom";
+
 
 const Section = styled.div`
   display: flex;
@@ -59,20 +61,22 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+
+
 const Navbar = () => {
   return (
     <Section>
       <Container>
-        <Links>
+          <Links>
           <Logo src={myImage} alt="Logo" /> 
           <List>
-            <ListItem>Home</ListItem>
-            <ListItem>About</ListItem>
-            <ListItem>Portfolio</ListItem>
-            <ListItem>Contact</ListItem>
-            <ListItem>Resume</ListItem>
+        
+        <ListItem><Link to='/Intro'>Home</Link></ListItem>
+       <ListItem><Link to='/About'>About</Link></ListItem>
+       <ListItem><Link to='/Portfolio'>Portfolio</Link></ListItem>
+        <ListItem><Link to='/Contact'>Contact</Link></ListItem>
           </List>
-        </Links>
+          </Links>
         <Icons>
           <Icon src={myIcon} alt="Icon" /> {/* Added alt attribute */}
           <Button>Hire Me!</Button>

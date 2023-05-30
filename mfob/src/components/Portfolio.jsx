@@ -8,6 +8,7 @@ import { useState } from "react";
 import MachineLearning from './MachineLearning';
 
 
+
 const data = [
   "Web Design",
   "Data Science",
@@ -45,24 +46,24 @@ color: transparent;
 position: relative;
 ::after{
   content: "${(props) => props.text}";
-  postion: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   color: #0050B5;
   width: 0px;
   overflow: hidden;
-  whitespace: nowrap;
+  white-space: nowrap;
 
 }
-&:hover{
-  ::after{
-    animation: moveAround 0.5s linear both;
-    @keyfram moveAround {
-      to{width: 100%}
-    }
-  }
-}
-`;
+// &:hover{
+//   ::after{
+//     animation: moveAround 0.5s linear both;
+//     @keyfram moveAround {
+//       to{width: 100%}
+//     }
+//   }
+// }
+// `;
 const Top = styled.div`
 flex:1;
 display: flex;
@@ -101,6 +102,7 @@ const Portfolio = () => {
     ) : ( <MachineLearning /> )}
   </Bottom>
 </Container>
+
 </Section>
 );
 };

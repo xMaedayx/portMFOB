@@ -10,8 +10,6 @@ const Description = styled.div`
   position: absolute;
   top: 100px;
   right: 100px;
-
-  }
 `;
 
 const WebDesign = () => {

@@ -11,6 +11,7 @@ import MachineLearning from "./components/MachineLearning";
 
 
 
+
 const Article = styled.article`
 height: 100vh;
 background-color: #B2AC88; `;
@@ -26,6 +27,7 @@ function App() {
      <DataScience />
      <AppDevelopment />
      <MachineLearning />
+
 
 
   </Article>
